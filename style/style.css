@@ -276,27 +276,16 @@ body {
 
 /* footer*/
 .footer {
-  position: absolute;
-  top: 2773px;
-  ;
+
 }
 
 .subscribe {
-  position: relative;
-  height: 414.86px;
-}
+
+
+}:
 
 .subscribe_text {
   position: relative;
-}
-
-.subscribe-background {
-  display: block;
-  position: absolute;
-  filter: blur(10px);
-  padding: 0;
-  margin: 0;
-  top: -25px;
 }
 
 .contacts_cont {
@@ -313,8 +302,6 @@ body {
 .social_link {
   margin-right: 26.33px;
 }
-
-.social_link :first-child {}
 
 .contacts_phone-number {
   margin-left: 249.17px;
