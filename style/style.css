@@ -169,24 +169,29 @@ body {
   padding-left: 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 384px 384px 384px 384px ;
+  grid-template-rows: 384px 384px 384px 384px;
 }
 
 .feature__list :nth-last-child(4) {
   background-color: #82B3D3;
 }
+
 .feature__list :nth-last-child(10) {
   background-color: #82B3D3;
 }
+
 .feature__list :nth-of-type(2n):not(:nth-last-child(4)):not(:nth-last-child(2)) {
   background-color: rgba(131, 179, 211, 0.2);
 }
+
 .feature__list :nth-of-type(3n):not(:nth-last-child(4)) {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .feature__list :nth-last-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .feature__list :nth-last-child(6) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -202,24 +207,31 @@ body {
 .feature__grid1 {
   grid-column: 1/2;
 }
+
 .feature__grid2 {
   grid-column: 1/2;
 }
+
 .feature__grid3 {
   grid-column: 2/3;
 }
+
 .feature__grid4 {
   grid-column: 3/4;
 }
+
 .feature__grid5 {
   grid-column: 3/4;
 }
+
 .feature__grid6 {
   grid-column: 1/2;
 }
+
 .feature__grid7 {
   grid-column: 2/3;
 }
+
 .feature__grid8 {
   grid-column: 3/4;
 }
@@ -249,11 +261,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .hotel_search h1 {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
+
 .hotel_search p {
   font-size: 22px;
   font-weight: 400;
@@ -263,7 +277,8 @@ body {
 /* footer*/
 .footer {
   position: absolute;
-  top: 2773px;;
+  top: 2773px;
+  ;
 }
 
 .subscribe {
@@ -274,6 +289,7 @@ body {
 .subscribe_text {
   position: relative;
 }
+
 .subscribe-background {
   display: block;
   position: absolute;
@@ -282,6 +298,7 @@ body {
   margin: 0;
   top: -25px;
 }
+
 .contacts_cont {
   width: 1200px;
   height: 120px;
@@ -290,20 +307,18 @@ body {
   align-items: center;
   background-color: white;
 }
-.social {
 
-}
+.social {}
+
 .social_link {
   margin-right: 26.33px;
 }
-.social_link :first-child{
 
-}
+.social_link :first-child {}
 
 .contacts_phone-number {
   margin-left: 249.17px;
   margin-right: 235.5px;
 }
 
-.contacts_htmlacademy {
-}
+.contacts_htmlacademy {}

@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
   </head>
+
   <body>
     <header class="header">
-      <img src="images/logo.svg" class="logo" width="140" height="75" alt="Лого">
+      <img src="images/logo.svg" class="logo" width="140" height="75" alt="Лого" />
       <nav class="mavigation">
         <ul class="navigation__list">
-          <li class="navigation__item "><a class="navigation__link navigation__link--current" href="index.html">Главная</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="
-            about.html">О Седоне</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="
+            about.html">О Седоне</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
       <ul class="controls">
-        <li class="controls__item"><button class="controls__button" type="search" alt="Поиск"><img src="images/searchicon.png" width="18" height="18"  alt="Поиск"></button></li>
-        <li class="controls__item"><button class="controls__button"><img src="images/like.png" alt="Лайк"></button></li>
-        <li class="controls__item"><button class="controls__button" type="button" alt="Хочу сюда">ХОЧУ СЮДА!</button></li>
+        <li class="controls__item">
+          <button class="controls__button" type="search" alt="Поиск">
+            <img src="images/searchicon.png" width="18" height="18" alt="Поиск" />
+          </button>
+        </li>
+        <li class="controls__item">
+          <button class="controls__button">
+            <img src="images/like.png" alt="Лайк" />
+          </button>
+        </li>
+        <li class="controls__item">
+          <button class="controls__button" type="button" alt="Хочу сюда">
+            ХОЧУ СЮДА!
+          </button>
+        </li>
       </ul>
     </header>
     <main>
@@ -36,36 +56,27 @@
         <form action="#" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <label><input type="checkbox" value="pool" name="infrastructure">Бассейн</label>
-            <label><input type="checkbox" value="parking" name="infrastructure">Парковка</label>
-            <label><input type="checkbox" value="wi-fi" name="infrastructure">Wi-Fi</label>
+            <label><input type="checkbox" value="pool" name="infrastructure" />Бассейн</label>
+            <label><input type="checkbox" value="parking" name="infrastructure" />Парковка</label>
+            <label><input type="checkbox" value="wi-fi" name="infrastructure" />Wi-Fi</label>
           </fieldset>
           <fieldset>
             <legend>Тип Жилья:</legend>
-            <label><input type="radio" value="hotel" name="infrastructure">Гостиница</label>
-            <label><input type="radio" value="motel" name="infrastructure">Мотель</label>
-            <label><input type="radio" value="apartments" name="infrastructure">Апартаменты</label>
+            <label><input type="radio" value="hotel" name="infrastructure" />Гостиница</label>
+            <label><input type="radio" value="motel" name="infrastructure" />Мотель</label>
+            <label><input type="radio" value="apartments" name="infrastructure" />Апартаменты</label>
           </fieldset>
           <fieldset>
             <legend>Стоимость, <span>₽</span></legend>
-            <label><input type="text" value="0">от</label>
-            <label><input type="text" value="9000">до</label>
-            <label><input type="range" min="0" max="10000" step="2000"></label>
+            <label><input type="text" value="0" />от</label>
+            <label><input type="text" value="9000" />до</label>
+            <label><input type="range" min="0" max="10000" step="2000" /></label>
           </fieldset>
           <button type="submit" value="Применить">Применить</button>
           <button type="reset" value="Сбросить">Сбросить</button>
         </form>
-
-
-
       </section>
-
-
-
     </main>
-
-
-
-
   </body>
+
 </html>
