@@ -14,7 +14,7 @@ body {
 
 
 /*HEADER*/
-.header {
+.page-header {
   position: relative;
   z-index: 1;
   background-color: white;
@@ -100,7 +100,7 @@ body {
   height: 212.77px;
 }
 
-.background_image {
+.welcome-background_image {
   display: block;
   position: absolute;
 }
@@ -124,7 +124,7 @@ body {
   margin-bottom: 51px;
 }
 
-.devider {
+.welcome-devider {
   position: absolute;
   top: 492px;
 }
