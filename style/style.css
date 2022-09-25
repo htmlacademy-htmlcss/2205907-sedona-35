@@ -59,7 +59,7 @@ body {
   position: relative;
 }
 
-.navigation_link--current::before {
+.navigation_link-current::before {
   content: "";
   width: 100%;
   height: 1px;
