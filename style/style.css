@@ -100,18 +100,18 @@ body {
 }
 
 /*PROMO*/
-.welcome {
+.intro {
   position: static;
   width: 456.7px;
   height: 212.77px;
 }
 
-.welcome-background_image {
+.intro-background_image {
   display: block;
   position: absolute;
 }
 
-.welcome_text {
+.intro_text {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -122,15 +122,15 @@ body {
   left: 371px;
 }
 
-.welcome_img-welcome {
+.intro_img-welcome {
   margin-bottom: 11px;
 }
 
-.welcome_img-gorgeous-place {
+.intro_img-gorgeous-place {
   margin-bottom: 51px;
 }
 
-.welcome-devider {
+.intro-devider {
   position: absolute;
   top: 492px;
 }
@@ -281,7 +281,7 @@ body {
 }
 
 /* footer*/
-.footer {
+.page-footer {
 }
 
 .subscribe {
@@ -301,7 +301,7 @@ body {
   background-color: white;
 }
 
-.social {
+.footer-social {
 
 }
 
@@ -314,6 +314,6 @@ body {
   margin-right: 235.5px;
 }
 
-.contacts_htmlacademy {
+.footer-contacts_htmlacademy {
 
 }

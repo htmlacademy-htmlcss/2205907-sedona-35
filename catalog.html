@@ -12,7 +12,7 @@
 
   <body>
     <header class="page-header">
-      <img src="images/logo.svg" class="logo" width="140" height="75" alt="Лого">
+      <img src="images/logo.svg" class="logo" width="140" height="75" alt="Логотип города Седона">
       <nav class="mavigation">
         <ul class="navigation_list">
           <li class="navigation_item "><a class="navigation_link navigation_link--current" href="index.html">Главная</a>
@@ -23,11 +23,11 @@
         </ul>
       </nav>
       <ul class="controls">
-        <li class="controls_item"><button class="controls_button" type="search"><img
-              src="images/searchicon.png" width="18" height="18" alt="Поиск"></button></li>
-        <li class="controls_item"><button class="controls_button"><img src="images/like.png" alt="Кнопка лайка"></button></li>
-        <li class="controls_item"><button class="controls_button" type="button"><a
-              href="catalog.html">ХОЧУ СЮДА!</a></button>
+        <li class="controls_item"><button class="controls_button" type="button"><img src="images/searchicon.png"
+              width="18" height="18" alt="Поиск"></button></li>
+        <li class="controls_item"><button class="controls_button"><img src="images/like.png"
+              alt="Кнопка лайка"></button></li>
+        <li class="controls_item"><a class="button controls_button" href="catalog.html">ХОЧУ СЮДА!</a>
         </li>
       </ul>
     </header>
@@ -35,7 +35,7 @@
         <section class="filters">
           <h1>Гостиницы Седоны</h1>
           <ul class="breadcrumb">
-            <li><a href="index.html"><img alt="Вы на этой странице"></a></li>
+            <li><a href="index.html"><img src="" alt="Вы на этой странице"></a></li>
             <li>Италия</li>
           </ul>
           <form class="filter-form" action="#" method="get">
@@ -65,68 +65,70 @@
           <h2>НАЙДЕНО ГОСТИННИЦ: 38</h2>
         </div>
         <section class=sort>
+          <h2 class="visually-hidden">Сортировка</h2>
           <select>
             <option>Сначала дешевые</option>
             <option>сначала дорогие</option>
             <option>Популярные</option>
           </select>
           <div class="view"></div>
-          <button class="view_btn"><img></button>
-          <button class="view_btn"><img></button>
-          <button class="view_btn"><img></button>
+            <button class="view_btn"><img src="" alt=""></button>
+            <button class="view_btn"><img src="" alt=""></button>
+            <button class="view_btn"><img src="" alt=""></button>
           </div>
         </section>
         <section class="hotel_select">
-          <article>
-            <img alt="Вид из отеля на ущелья в звездной ночи">
-            <h3>Amara Resort & Spa</h3>
+          <h2 class="visually-hidden">Выбор отеля</h2>
+          <article class="hotel-item">
+            <img class="" src=""  alt="Вид из отеля на ущелья в звездной ночи">
+            <h3 class="Hotel-name">Amara Resort & Spa</h3>
             <dl>
-              <dt>Гостиница</dt>
-              <dd>от 4000 ₽</dd>
+              <dt class="hotel-type">Гостиница</dt>
+              <dd><b class="hotel-price">от 4000 ₽</b></dd>
             </dl>
-            <button></button>
-            <button></button>
-            <img>
+            <a class="button button-more_info" href="#">Подробнее</a>
+            <button class="hotel-make-favorite">В избранное</button>
+            <img src="" alt="">
             <p class="rate">РЕЙТИНГ: 8,5</p>
           </article>
 
-          <article>
-            <img alt="Вид из отеля на каньон с радугой">
-            <h3>Villas at Poco Diablo</h3>
+          <article class="hotel-item">
+            <img class="" src=""  alt="Вид из отеля на каньон с радугой">
+            <h3 class="Hotel-name">Villas at Poco Diablo</h3>
             <dl>
-              <dt>Гостиница</dt>
-              <dd>от 5000 ₽</dd>
+              <dt class="hotel-type">Гостиница</dt>
+              <dd><b class="hotel-price">от 5000 ₽</b></dd>
             </dl>
-            <button></button>
-            <button></button>
-            <img>
+            <a class="button button-more_info" href="#">Подробнее</a>
+            <button class="hotel-make-favorite">В избранное</button>
+            <img src="" alt="">
             <p class="rate">РЕЙТИНГ: 9,2</p>
           </article>
 
-          <article>
-            <img alt="Вид из отеля на каньон в солнечную погоду">
-            <h3>Desert Quail Inn</h3>
+          <article class="hotel-item">
+            <img class="" src=""  alt="Вид из отеля на каньон в солнечную погоду">
+            <h3 class="Hotel-name">Desert Quail Inn</h3>
             <dl>
-              <dt>Гостиница</dt>
-              <dd>от 2500 ₽</dd>
+              <dt class="hotel-type">Гостиница</dt>
+              <dd><b class="hotel-price">от 2500 ₽</b></dd>
             </dl>
-            <button></button>
-            <button></button>
-            <img>
+            <a class="button button-more_info" href="#">Подробнее</a>
+            <button class="hotel-make-favorite">В избранное</button>
+            <img src="" alt="">
             <p class="rate">РЕЙТИНГ: 6,9</p>
 
           </article>
 
-          <article>
-            <img alt="Вид на каньон в звездную ночь">
-            <h3>GreenTree Inn</h3>
+          <article class="hotel-item">
+            <img class="" src="" alt="Вид на каньон в звездную ночь">
+            <h3 class="Hotel-name">GreenTree Inn</h3>
             <dl>
-              <dt>Гостиница</dt>
-              <dd>от 1500 ₽</dd>
+              <dt class="hotel-type">Гостиница</dt>
+              <dd><b class="hotel-price">от 1500 ₽</b></dd>
             </dl>
-            <button></button>
-            <button></button>
-            <img>
+            <a class="button button-more_info" href="#">Подробнее</a>
+            <button class="hotel-make-favorite">В избранное</button>
+            <img src="" alt="">
             <p class="rate">РЕЙТИНГ: 5,0</p>
 
           </article>
@@ -146,32 +148,40 @@
           <a href="#">&raquo;</a>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="page-footer">
         <section class="subscribe">
           <div class="sibscribe_text">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-            <input type="email" placeholder="Ваш e-mail" name="email">
-            <button type="submit" value="ПОДПИСАТЬСЯ">ПОДПИСАТЬСЯ</button>
+            <form class="subscribe-form" action="#" method="post">
+              <label class="visually-hidden" for="subscribe-email"></label>
+              <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+              <button type="submit" value="ПОДПИСАТЬСЯ">ПОДПИСАТЬСЯ</button>
+            </form>
           </div>
-          <img class="subscribe-background" src="images/subscribe-background.jpg" width="1200" height="414.86">
+          <img class="subscribe-background" src="images/subscribe-background.jpg" width="1200" height="414.86" alt="">
         </section>
         <section class="contacts">
+          <h3 class="visually-hidden">Контакты</h3>
           <ul class="contacts_cont">
-            <div class="social"></div>
-            <a class="social_link" href="https://vk.com/htmlacademy"><img src="images/vk.png"
-                alt="Перейти в группу ВК Академии"></a>
-            <a class="social_link" href="https://telegram.me/htmlacademy"><img src="images/telegram.png"
-                alt="Перейти в телеграм группу Академии"></a>
-            <a class="social_link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.png"
+            <li class="contacts-items">
+              <div class="footer-social">
+                <a class="social_link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span><img
+                src="images/vk.png" alt="Перейти в группу ВК Академии"></a>
+                <a class="social_link" href="https://telegram.me/htmlacademy"><span
+                class="visually-hidden">Телеграмм</span><img src="images/telegram.png"
+                alt="Перейти в Телеграмм группу Академии"></a>
+                <a class="social_link" href="https://www.youtube.com/user/htmlacademyru"><span
+                class="visually-hidden">ютуб-канал</span><img src="images/youtube.png"
                 alt="Перейти на ютуб-канал академии"></a>
-            </div>
-            <div class="contacts_phone-number">
-              <h2 class="phone_number">+7 (812) 812-12-12</h2>
-            </div>
-            <div class="contacts_htmlacademy"><a class="footer_count-link" href="https://htmlacademy.ru/"><img
-                  src="images/HTML Academy.png" name="html-academy"
-                  alt="Перейти на главную страницу сайта Академии"></a></div>
+            </div></li>
+            <li class="contacts-items">
+              <div class="foter-contacts_phone">
+              <a class="contacts_phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+            </div></li>
+            <li class="contacts-items"><div class="footer-contacts_htmlacademy"><a class="footer_count-link" href="https://htmlacademy.ru/"><img
+                  src="images/HTMLAcademy.png" alt="Перейти на главную страницу сайта Академии"></a>
+            </div></li>
           </ul>
         </section>
       </footer>
