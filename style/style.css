@@ -276,13 +276,11 @@ body {
 
 /* footer*/
 .footer {
-
 }
 
 .subscribe {
 
-
-}:
+}
 
 .subscribe_text {
   position: relative;
@@ -297,7 +295,9 @@ body {
   background-color: white;
 }
 
-.social {}
+.social {
+
+}
 
 .social_link {
   margin-right: 26.33px;
@@ -308,4 +308,6 @@ body {
   margin-right: 235.5px;
 }
 
-.contacts_htmlacademy {}
+.contacts_htmlacademy {
+
+}
