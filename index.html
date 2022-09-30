@@ -9,30 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header class="page-header">
       <nav class="mavigation">
-        <a class="navigation-logo" href="index.html"><img src="images/logo.svg" class="logo" width="140" height="75"
-            alt="Логотип города Седона"></a>
+        <a class="navigation-logo" href="index.html">
+          <img src="images/logo.svg" class="logo" width="140" height="75" alt="Логотип города Седона">
+        </a>
         <ul class="navigation-list">
-          <li class="navigation-item "><a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+          <li class="navigation-item ">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="
-            about.html">О Седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
       <ul class="controls">
-        <li class="controls-item"><button class="controls-button" type="button">Поиск</button></li>
-        <li class="controls-item"><button class="controls-button">Лайк</button></li>
-        <li class="controls-item"><a class="button controls-button" href="catalog.html">Хочу сюда!</a>
+        <li class="controls-item">
+          <button class="controls-button" type="button">Поиск</button>
+        </li>
+        <li class="controls-item">
+          <button class="controls-button">Лайк</button>
+        </li>
+        <li class="controls-item">
+          <a class="button controls-button" href="catalog.html">Хочу сюда!</a>
         </li>
       </ul>
     </header>
     <main>
       <h1 class="visually-hidden">Седона-город в Аризоне</h1>
       <section class="intro">
-        <h2 class="visually-hidden">Введение</h2>
+        <h2 class="visually-hidden">Седона-город в Аризоне</h2>
         <div class="intro-text">
           <img class="intro-img-welcome" src="images/welcome.svg" width="187.7" height="44.7" alt="">
           <img class="intro-img-gorgeous-place" src="images/to-the-gorgeous.svg" width="256" height="28.78" alt="">
@@ -73,18 +84,15 @@
             <img class="advantages-img-canyon" src="images/canyon.jpg" width="800" height="384" alt="Фото Каньона">
           </li>
           <li class="advantages-item advantages-grid6">
-            <img src="images/advantage-house.svg" width="75" height="72" alt="">
             <h3 class="advantages-title">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item advantages-grid7">
-            <img src="images/advantage-eat.svg" width="74" height="70" alt="">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="advantages-item advantages-grid8">
-            <img src="images/advantage-souvenir.svg" width="64" height="76" alt="">
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -98,30 +106,35 @@
     </main>
     <footer class="page-footer">
       <section class="subscribe">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="#" method="post">
-            <label class="visually-hidden" for="subscribe-email"></label>
-            <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
-            <button type="submit" value="Подписаться">Подписаться</button>
-          </form>
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="#" method="post">
+          <label class="visually-hidden" for="subscribe-email"></label>
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+          <button type="submit" value="Подписаться">Подписаться</button>
+        </form>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="footer-social">
-          <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-          <a class="social-link" href="https://telegram.me/htmlacademy"><span
-              class="visually-hidden">Телеграмм</span></a>
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><span
-              class="visually-hidden">Ютуб-канал</span></a>
-        </div>
-        <div class="foter-contacts-phone">
-          <a class="contacts-phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </div>
-        <div class="footer-contacts-htmlacademy"><a class="footer-count-link" href="https://htmlacademy.ru/"><img
-              src="images/html-academy.png" alt="Перейти на главную страницу сайта Академии"></a>
-        </div>
+        <ul class="footer-social">
+          <li>
+            <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li>
+            <a class="social-link" href="https://telegram.me/htmlacademy"><span class="visually-hidden">Телеграмм</span></a>
+              </li>
+          <li>
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб-канал</span></a>
+          </li>
+          <li>
+            <a class="contacts-phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </li>
+          <li>
+            <a class="footer-count-link" href="https://htmlacademy.ru/"><img src="images/html-academy.png" alt="Перейти на главную страницу сайта Академии"></a>
+          </li>
+        </ul>
       </section>
     </footer>
   </body>
+
 </html>
