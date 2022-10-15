@@ -232,6 +232,7 @@ body {
   margin-bottom: 0;
 }
 
+
 .advantages-item {
   display: flex;
   flex-direction: column;
@@ -303,11 +304,11 @@ body {
 .hotel-search {
   background-color: white;
   position: relative;
-  height: 406px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 96px 0 96px 0;
 }
 
 .hotel-search-title {
@@ -317,6 +318,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 20px;
 }
 
