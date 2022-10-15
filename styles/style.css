@@ -162,10 +162,10 @@ body {
   top: 93px;
 }
 
-.title {
+.main-title {
   background-color: white;
   position: relative;
-  height: 282px;
+  padding: 69px 0 90px 0;
 }
 
 .title-text {
@@ -173,7 +173,6 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top: 69px;
 }
 
 .title-main {
@@ -186,6 +185,8 @@ body {
   width: 800px;
   text-align: center;
   align-self: center;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .info {
@@ -194,6 +195,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
 }
 
 
@@ -420,8 +422,7 @@ body {
 
 /*Catalog: Filter block*/
 .inner-header-title,
-.advantages-title,
-.title-main {
+.advantages-title {
   margin: 0;
 }
 
