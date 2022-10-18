@@ -35,6 +35,94 @@ body {
 
 /*HEADER*/
 .page-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo {
+  z-index: 1;
+  position: absolute;
+  margin-top: -3px;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 70px;
+  width: 1200px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  width: 339px;
+  margin: 0;
+  padding: 0;
+  margin-left: 184px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::before {
+  content: "";
+  width: 68px;
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  bottom: 0;
+}
+
+.controls-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  max-width: 268px;
+}
+
+.controls-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 13px;
+}
+
+
+.controls-link {
+  display: block;
+  padding: 8px 34px;
+  border-radius: 4px;
+  background-color: #756157;
+  color: white;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  margin-left: 11px;
+}
+
+/* .page-header {
   position: relative;
   background-color: white;
   width: 1200px;
@@ -56,6 +144,7 @@ body {
 
 .navigation-list {
   display: flex;
+  margin: 0;
   margin-left: 46px;
   padding: 0;
 }
@@ -72,6 +161,8 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation-link-current {
@@ -84,10 +175,10 @@ body {
   height: 2px;
   background-color: #756257;
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
 }
 
-.controls {
+.controls-list {
   display: flex;
   align-items: center;
   margin: 0 70px 0 260px;
@@ -125,7 +216,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-}
+} */
 
 
 /*MAIN*/
@@ -154,7 +245,6 @@ body {
 }
 
 .intro-img-sedona {
-  display: block;
   position: relative;
   right: 372px;
   left: 371px;
@@ -367,6 +457,7 @@ body {
   font-family: 'PT Sans';
   font-weight: 700;
   border: none;
+  cursor: pointer;
 }
 
 /*Subscribe*/
@@ -439,6 +530,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
+  cursor: pointer;
 }
 
 /*Catalog: Filter block*/
@@ -592,6 +684,19 @@ body {
   height: 2px;
 }
 
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.form-button-fill {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
 .form-button-transparent {
   background-color: transparent;
   color: white;
@@ -603,17 +708,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-}
-
-.filter-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-top: 30px;
-}
-
-.form-button-fill {
-  margin-bottom: 40px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .form-button-fill,
@@ -641,6 +737,14 @@ body {
   height: 49px;
   display: flex;
   align-items: center;
+}
+
+.select-control {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
 }
 
 .search-result {
@@ -717,6 +821,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-more-info {
@@ -827,4 +932,5 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  cursor: pointer;
 }
