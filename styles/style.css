@@ -315,6 +315,21 @@ body {
   padding: 93px 85px 111px 85px;
 }
 
+.advantages-item--no-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 85px 121px 85px;
+}
+
+.advantages-item--with-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 85px 81px 85px;
+}
+
+
 .advantages-img-canyon {
   order: -1;
 }
@@ -329,6 +344,22 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 60px;
+}
+
+.advantages-icon {
+  margin-bottom: 30px;
+}
+
+.advantages-title--below-icon {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  max-width: 175px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
