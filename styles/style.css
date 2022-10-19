@@ -303,8 +303,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  min-height: 384px;
-  max-height: 384px;
+  /* min-height: 384px;
+  max-height: 384px; */
   display: flex;
 }
 
