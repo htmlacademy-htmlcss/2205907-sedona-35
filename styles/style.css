@@ -223,7 +223,7 @@ body {
 .intro {
   height: 485px;
   background-color: gray;
-  background-image: url(/images/devider.svg), url(/images/background.jpg);
+  background-image: url(../images/devider.svg), url(../images/background.jpg);
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
 }
@@ -494,7 +494,7 @@ body {
 
 /*Subscribe*/
 .subscribe-bg {
-  background-image: url(/images/subscribe-background.jpg);
+  background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   color: white;
   background-color: grey;
