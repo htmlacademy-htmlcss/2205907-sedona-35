@@ -303,8 +303,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  min-height: 384px;
-  max-height: 384px;
+  /* min-height: 384px;
+  max-height: 384px; */
   display: flex;
 }
 
@@ -314,6 +314,21 @@ body {
   align-items: center;
   padding: 93px 85px 111px 85px;
 }
+
+.advantages-item--no-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 85px 121px 85px;
+}
+
+.advantages-item--with-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 85px 81px 85px;
+}
+
 
 .advantages-img-canyon {
   order: -1;
@@ -331,6 +346,22 @@ body {
   margin-bottom: 60px;
 }
 
+.advantages-icon {
+  margin-bottom: 30px;
+}
+
+.advantages-title--below-icon {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  max-width: 175px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .advantages-description {
   font-style: normal;
   font-weight: 400;
@@ -343,7 +374,23 @@ body {
   margin: 0;
 }
 
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
 
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-last-child(2) {
+  background-color: white;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(5) {
+  background-color: #82B3D3;
+  color: white;
+}
 
 
 
@@ -397,21 +444,6 @@ body {
   384px как по макету
 } */
 
-.advantages-grid1,
-.advantages-grid6 {
-  background-color: #82B3D3;
-}
-
-.advantages-grid3,
-.advantages-grid5,
-.advantages-grid8,
-.advantages-grid10 {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-grid4 {
-  background-color: rgba(131, 179, 211, 0.2);
-}
 
 /*Поиск гостиницы (заинтересовались?)*/
 .hotel-search {
