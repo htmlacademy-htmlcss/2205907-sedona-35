@@ -631,7 +631,7 @@ body {
 }
 
 .catalog-hotels {
-  background-image: url(/images/catalog-bg.jpg);
+  background-image: url(../images/catalog-bg.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
 }
