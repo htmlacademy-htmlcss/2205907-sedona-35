@@ -78,6 +78,16 @@ body {
   position: relative;
 }
 
+.navigation-link-current::before {
+  content: "";
+  width: 68px;
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+}
+
 .controls-list {
   display: flex;
   align-items: center;
@@ -631,7 +641,7 @@ body {
 }
 
 .catalog-hotels {
-  background-image: url(/images/catalog-bg.jpg);
+  background-image: url(../images/catalog-bg.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
 }
