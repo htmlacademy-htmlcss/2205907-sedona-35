@@ -931,6 +931,7 @@ body {
 
 .button-more-info,
 .button-make-favorite {
+  display: block;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -941,6 +942,7 @@ body {
 }
 
 .button-more-info {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
@@ -968,6 +970,7 @@ body {
 }
 
 .hotel-rate {
+  display: block;
   grid-column: 2/3;
   font-style: normal;
   font-weight: 400;
