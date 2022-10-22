@@ -931,8 +931,8 @@ body {
 
 .button-more-info,
 .button-make-favorite {
-  display: block;
   font-family: 'PT Sans';
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1020,6 +1020,7 @@ body {
   border-radius: 4px;
   color: black;
   margin: 0;
+  cursor: pointer;
 }
 
 .pagination-number {
