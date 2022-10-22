@@ -137,10 +137,10 @@
           <fieldset class="catalog-filter-group catalog-filter-group-price">
             <legend class="catalog-filter-title">Стоимость, <span>₽</span></legend>
             <div class="price-input-wrapper">
-              <label class="value-from-till"><input class="price-input price-input-from" type="text"
-                  value="0                     от"></label>
-              <label class="value-from-till"><input class="price-input price-input-till" type="text"
-                  value="9000              до "></label>
+              <label class="value-from-till"><input class="price-input price-input-from" type="text" value="0"
+                  placeholder="от"></label>
+              <label class="value-from-till"><input class="price-input price-input-till" type="text" value="9000"
+                  placeholder="до"></label>
             </div>
             <label class="range-bar"><input class="price-range" type="range" min="0" max="10000" step="2000"></label>
           </fieldset>
@@ -157,13 +157,13 @@
           <option value="expensive">Cначала дорогие</option>
           <option value="popular">Популярные</option>
         </select>
-        <a href="#" class="button button-light">
+        <a href="#" class="button--three-in-a-row button--three--current">
           <span class="visually-hidden">Показать три в ряд</span>
         </a>
-        <a class="button" href="#">
+        <a class="button--slideshow" href="#">
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
-        <a class="button" href="#">
+        <a class="button--listshow" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
       </div>
@@ -172,10 +172,8 @@
           <li class="hotel-card">
             <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Вид из отеля на ущелья в звездной ночи">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <div class="hotel-card-wrapper">
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 4000 ₽</p>
-            </div>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">от 4000 ₽</p>
             <a class="button button-more-info" href="#">Подробнее</a>
             <button class="button-make-favorite">В избранное</button>
             <p class="hotel-rate">Рейтинг: 8,5</p>
@@ -183,10 +181,8 @@
           <li class="hotel-card">
             <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Вид из отеля на каньон с радугой">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-            <div class="hotel-card-wrapper">
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 5000 ₽</p>
-            </div>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">от 5000 ₽</p>
             <a class="button button-more-info" href="#">Подробнее</a>
             <button class="button-make-favorite hotel-make-favorite-already">В избранное</button>
             <p class="hotel-rate">Рейтинг: 9,2</p>
@@ -194,10 +190,8 @@
           <li class="hotel-card">
             <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Вид из отеля на каньон в солнечную погоду">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
-            <div class="hotel-card-wrapper">
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 2500 ₽</p>
-            </div>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">от 2500 ₽</p>
             <a class="button button-more-info" href="#">Подробнее</a>
             <button class="button-make-favorite">В избранное</button>
             <p class="hotel-rate">Рейтинг: 6,9</p>
@@ -205,10 +199,8 @@
           <li class="hotel-card">
             <img class="hotel-card-image" src="images/hotel-4.jpg" alt="Вид на каньон в звездную ночь">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
-            <div class="hotel-card-wrapper">
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 1500 ₽</p>
-            </div>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">от 1500 ₽</p>
             <a class="button button-more-info" href="#">Подробнее</a>
             <button class="button-make-favorite">В избранное</button>
             <p class="hotel-rate">Рейтинг: 5,0</p>
@@ -217,20 +209,32 @@
       </section>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-current">1</a>
+          <a class="pagination-link pagination-link-current">
+            <p class="pagination-number-current">1</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">2</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">3</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">4</p>
+          </a>
         </li>
-        <li class="pagination-show-less">...</li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <p class="pagination-show-less">...</p>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">10</p>
+          </a>
         </li>
       </ul>
     </main>
@@ -238,7 +242,8 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="#" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+        <label class="visually-hidden" for="subscribe-email"></label>
+        <input class="email-input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
         <button class="subscribe-button" type="submit" value="Подписаться">Подписаться</button>
       </form>
     </section>
