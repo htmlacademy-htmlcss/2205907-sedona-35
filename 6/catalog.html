@@ -138,10 +138,10 @@
           <fieldset class="catalog-filter-group catalog-filter-group-price">
             <legend class="catalog-filter-title">Стоимость, <span>₽</span></legend>
             <div class="price-input-wrapper">
-              <label class="value-from-till"><input class="price-input price-input-from" type="text"
-                  value="0                     от"></label>
-              <label class="value-from-till"><input class="price-input price-input-till" type="text"
-                  value="9000              до "></label>
+              <label class="value-from-till"><input class="price-input price-input-from" type="text" value="0"
+                  placeholder="от"></label>
+              <label class="value-from-till"><input class="price-input price-input-till" type="text" value="9000"
+                  placeholder="до"></label>
             </div>
             <label class="range-bar"><input class="price-range" type="range" min="0" max="10000" step="2000"></label>
           </fieldset>
@@ -210,20 +210,32 @@
       </section>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-current">1</a>
+          <a class="pagination-link pagination-link-current">
+            <p class="pagination-number-current">1</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">2</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">3</p>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">4</p>
+          </a>
         </li>
-        <li class="pagination-show-less">...</li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <p class="pagination-show-less">...</p>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">
+            <p class="pagination-number">10</p>
+          </a>
         </li>
       </ul>
     </main>
@@ -231,7 +243,8 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="#" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+        <label class="visually-hidden" for="subscribe-email"></label>
+        <input class="email-input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
         <button class="subscribe-button" type="submit" value="Подписаться">Подписаться</button>
       </form>
     </section>
