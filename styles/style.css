@@ -65,7 +65,8 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 16px;
+  padding: 20px 0;
+  margin: 0 16px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -80,11 +81,11 @@ body {
 
 .navigation-link-current::before {
   content: "";
-  width: 68px;
+  width: 100%;
   height: 2px;
   background-color: #756257;
   position: absolute;
-  left: 15px;
+  /* left: 15px; */
   bottom: 0;
 }
 
@@ -573,7 +574,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding: 8px 50px 8px 50px;
-  min-height: 52px;
   border: none;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -583,6 +583,7 @@ body {
   line-height: 36px;
   background-color: #82B3D3;
   cursor: pointer;
+  margin-left: -5px;
 }
 
 /*Catalog: Filter block*/
@@ -704,7 +705,13 @@ body {
   border: none;
   font-size: 18px;
   font-weight: 700;
-  padding: 0;
+}
+
+.price-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px 12px 103px;
 }
 
 .price-input-from {
@@ -900,6 +907,8 @@ body {
 
 .hotel-price {
   grid-column: 2/3;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hotel-type,
@@ -959,37 +968,34 @@ body {
   background-color: #F2F2F2;
   margin: 0;
   padding: 8px 22px;
-  border: 4px;
+  border-radius: 4px;
 }
 
 .pagination {
   list-style-type: none;
   display: flex;
-  gap: 8px;
-  padding: 0;
-  margin: 80px 70px 60px 70px;
+  margin: 0;
+  padding: 80px 70px 60px 70px;
 }
 
 .pagination-item {
-  width: 60px;
-  height: 60px;
+  margin-right: 8px;
+
+}
+
+.pagination-show-less {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+  padding: 16px 21px;
 }
 
 .pagination-link {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
   text-decoration: none;
-  max-height: 60px;
-  max-width: 60px;
-  padding: 12px 20px;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  color: white;
 }
 
-.pagination-link-current {
+.pagination-number-current {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1001,7 +1007,36 @@ body {
   background-color: #F2F2F2;
   border-radius: 4px;
   color: black;
+  margin: 0;
 }
+
+.pagination-number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 24px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  color: white;
+  margin: 0;
+}
+
+/* .pagination-link-current {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  max-height: 60px;
+  max-width: 60px;
+  padding: 12px 20px 12px 20px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  color: black;
+} */
 
 /*FOOTER*/
 .page-footer {
