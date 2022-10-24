@@ -21,7 +21,7 @@ body {
   width: 1200px;
   height: 100%;
   background-color: white;
-  box-shadow: rgb(0 0 0 / 30%) 0 0 84px;
+  box-shadow: rgb(0 0 0 / 15%) 0 0 84px;
   font-family: "PT sans", sans-serif;
 }
 
@@ -43,13 +43,11 @@ body {
 .navigation-logo {
   z-index: 1;
   position: absolute;
-  margin-top: -3px;
 }
 
 .navigation {
   display: flex;
   margin: 0 70px;
-  width: 1200px;
 }
 
 .navigation-list {
@@ -57,10 +55,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
-  width: 339px;
   margin: 0;
   padding: 0;
-  margin-left: 184px;
+  margin-left: 168px;
 }
 
 .navigation-link {
@@ -95,17 +92,23 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  max-width: 268px;
+  margin-left: 285px;
 }
 
-.controls-button {
+.controls-button-search {
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0 13px;
 }
 
+.controls-button-favorite {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 13px;
+}
 
 .controls-link {
   display: block;
@@ -121,7 +124,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-  margin-left: 11px;
 }
 
 
@@ -244,14 +246,14 @@ body {
   position: relative;
   right: 472px;
   left: 472px;
-  top: 54px;
+  top: 57px;
 }
 
 .intro-img-sedona {
   position: relative;
   right: 372px;
   left: 371px;
-  top: 93px;
+  top: 111px;
 }
 
 .main-title {
@@ -894,6 +896,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 20px;
+  border-radius: 4px;
 }
 
 .hotel-card-image {
@@ -1053,19 +1056,41 @@ body {
 /*FOOTER*/
 .page-footer {
   background-color: white;
+  margin: 0;
+  padding: 40px 70px 30px 70px;
 }
 
-.footer-social {
+.footer-contacts-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 2px;
 }
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  padding: 12px;
+  text-decoration: none;
+  color: #83B3D3;
+}
+
+.social-link :hover {
+  color: #68A2CA;
+}
+
+.social-link :active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+
 
 .contacts-phone-number {
   font-style: normal;
@@ -1073,12 +1098,26 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  color: #000;
 }
 
-.select-control {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  cursor: pointer;
+.contacts-phone-number:hover {
+  color: #756157;
+}
+
+.contacts-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-academy-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-academy-link :hover {
+  color: #756157;
+}
+
+.footer-academy-link :active {
+  color: rgba(117, 97, 87, 0.3);
 }
