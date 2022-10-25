@@ -369,7 +369,6 @@ body {
   margin-bottom: 30px;
   background-image: url(../images/icons/advantages-item--stroke.svg);
   background-repeat: no-repeat;
-  bac
 }
 
 .advantages-description {
@@ -603,9 +602,6 @@ body {
 }
 
 /* .advantages-title*/
-  {
-  margin: 0;
-}
 
 .inner-header-title {
   font-style: normal;
