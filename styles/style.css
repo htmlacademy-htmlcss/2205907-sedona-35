@@ -107,7 +107,8 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 5px 13px;
+  padding: 20px 13px;
+  position: relative;
 }
 
 .favorite-block {
@@ -116,7 +117,9 @@ body {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  margin: -8px 0 0 9px;
+  top: 10px;
+  left: 22px;
+  /* margin: -8px 0 0 9px; */
 }
 
 .favorite-count {
