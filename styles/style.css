@@ -679,13 +679,14 @@ body {
   line-height: 21px;
 }
 
+/*
 .breadcrumbs-item::after {
   position: absolute;
   bottom: 5px;
   left: 15px;
   content: "";
   background-image: url(../images/icons/breadcrumbs-arrow.svg);
-}
+} */
 
 .catalog-filter {
   display: flex;
