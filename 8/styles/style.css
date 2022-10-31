@@ -604,18 +604,18 @@ body {
 
 .email-input {
   width: 452px;
-  padding: 0;
   border: 0;
   background-color: rgb(230, 230, 230);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 20px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   font-family: 'PT Sans';
+  padding: 0 0 0 20px;
 }
 
 .email-input::placeholder {
-  padding: 14px 345px 14px 20px;
+  padding: 14px 345px 14px 0;
 }
 
 .subscribe-button {
@@ -702,19 +702,16 @@ body {
 .catalog-filter-group {
   color: white;
   border: none;
+  width: 150px;
+  margin-right: 70px;
+  margin-left: 0;
+  padding: 0;
 }
 
 .catalog-hotels {
   background-image: url(../images/catalog-bg.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
-}
-
-.catalog-filter-group {
-  width: 150px;
-  margin-right: 70px;
-  margin-left: 0;
-  padding: 0;
 }
 
 .catalog-filter-list {
@@ -764,11 +761,14 @@ body {
 }
 
 .price-input {
+  z-index: 1;
   width: 143px;
   height: 48px;
   border: none;
   font-size: 18px;
   font-weight: 700;
+  line-height: 24px;
+  padding: 0 0 0 20px;
 }
 
 .price-input::placeholder {
@@ -797,18 +797,38 @@ body {
   line-height: 24px;
 }
 
+.range-scale {
+  position: relative;
+  background-color: lightgrey;
+}
+
 .range-bar {
+  /* position: absolute; */
   display: flex;
   align-items: flex-end;
-  background-color: ;
+  background-color: #FFFFFF;
+  height: 4px;
 }
 
-.price-range {
-  width: 287px;
-  margin: 0;
-  height: 2px;
+.range-toggle {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
 
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 50px;
+}
 
 .filter-buttons {
   display: flex;
@@ -887,6 +907,9 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 70px;
+  background-image: url(../images/icons/arrow.svg);
+  background-repeat: no-repeat;
+  left: ;
 }
 
 
@@ -1040,6 +1063,27 @@ body {
   background-color: #7DB54F;
 }
 
+.stars-rate {
+  display: block;
+  grid-column: 1/2;
+  margin: 10px 0;
+  background-image: url(../images/icons/rate-star.svg);
+  background-repeat: space;
+  padding: 6px;
+}
+
+.stars-rate-four {
+  width: 72px;
+}
+
+.stars-rate-three {
+  width: 45px;
+}
+
+.stars-rate-two {
+  width: 30px;
+}
+
 .hotel-rate {
   display: block;
   grid-column: 2/3;
@@ -1063,7 +1107,8 @@ body {
 
 .pagination-item {
   margin-right: 8px;
-
+  width: 60px;
+  text-align: center;
 }
 
 .pagination-show-less {
@@ -1079,14 +1124,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  padding: 12px 24px;
+  padding: 12px 0;
   background-color: #82B3D3;
   border-radius: 4px;
   color: white;
   margin: 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block
 }
 
 .pagination-link-current {
