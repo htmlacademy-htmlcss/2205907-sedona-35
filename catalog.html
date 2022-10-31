@@ -151,12 +151,23 @@
           <fieldset class="catalog-filter-group catalog-filter-group-price">
             <legend class="catalog-filter-title">Стоимость, <span>₽</span></legend>
             <div class="price-input-wrapper">
-              <label class="value-from-till"><input class="price-input price-input-from" type="text" value="0"
+              <label class="value-from-till"><input class="price-input price-input-from" type="number" value="0"
                   placeholder="от"></label>
-              <label class="value-from-till"><input class="price-input price-input-till" type="text" value="9000"
+              <label class="value-from-till"><input class="price-input price-input-till" type="number" value="9000"
                   placeholder="до"></label>
             </div>
-            <label class="range-bar"><input class="price-range" type="range" min="0" max="10000" step="2000"></label>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
           <div class="filter-buttons">
             <button class="form-button-fill button-blue" type="submit" value="Применить">Применить</button>
@@ -190,6 +201,9 @@
             <p class="hotel-price">от 4000 ₽</p>
             <a class="button-more-info button-browm" href="#">Подробнее</a>
             <button class="button-make-favorite button-blue">В избранное</button>
+            <p class="stars-rate stars-rate-four">
+              <span class="visually-hidden">4 звезды</span>
+            </p>
             <p class="hotel-rate">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
@@ -199,6 +213,9 @@
             <p class="hotel-price">от 5000 ₽</p>
             <a class="button-more-info button-browm" href="#">Подробнее</a>
             <button class="button-make-favorite button-blue hotel-make-favorite-already">В избранное</button>
+            <p class="stars-rate stars-rate-four">
+              <span class="visually-hidden">4 звезды</span>
+            </p>
             <p class="hotel-rate">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
@@ -208,6 +225,9 @@
             <p class="hotel-price">от 2500 ₽</p>
             <a class="button-more-info button-browm" href="#">Подробнее</a>
             <button class="button-make-favorite button-blue">В избранное</button>
+            <p class="stars-rate stars-rate-three">
+              <span class="visually-hidden">3 звезды</span>
+            </p>
             <p class="hotel-rate">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card">
@@ -217,6 +237,9 @@
             <p class="hotel-price">от 1500 ₽</p>
             <a class="button-more-info button-browm" href="#">Подробнее</a>
             <button class="button-make-favorite button-blue">В избранное</button>
+            <p class="stars-rate stars-rate-two">
+              <span class="visually-hidden">2 звезды</span>
+            </p>
             <p class="hotel-rate">Рейтинг: 5,0</p>
           </li>
         </ul>
