@@ -373,7 +373,7 @@ body {
   margin-bottom: 60px;
 }
 
-/* .advantages-title::before {
+.advantages-title::before {
   position: absolute;
   bottom: -30px;
   left: 55px;
@@ -392,7 +392,7 @@ body {
   width: 60px;
   height: 2px;
   background-image: url(../images/icons/advantages-item--stroke-light.svg);
-} */
+}
 
 .advantages-icon {
   margin-bottom: 30px;
@@ -659,10 +659,8 @@ body {
 }
 
 .breadcrumbs {
-  position: relative;
   list-style-type: none;
   display: flex;
-  align-items: center;
   color: white;
   padding: 0;
   margin: 0;
@@ -670,7 +668,23 @@ body {
 }
 
 .breadcrumbs-item {
+  position: relative;
   margin-right: 28px;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  bottom: 5px;
+  right: -20px;
+  color: white;
+  content: "";
+  width: 8px;
+  height: 10px;
+  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-link {
@@ -679,15 +693,6 @@ body {
   font-size: 16px;
   line-height: 21px;
 }
-
-/*
-.breadcrumbs-item::after {
-  position: absolute;
-  bottom: 5px;
-  left: 15px;
-  content: "";
-  background-image: url(../images/icons/breadcrumbs-arrow.svg);
-} */
 
 .catalog-filter {
   display: flex;
@@ -741,6 +746,7 @@ body {
   margin: 0;
   margin-right: 16px;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .catalog-filter-group-price {
@@ -794,6 +800,7 @@ body {
 .range-bar {
   display: flex;
   align-items: flex-end;
+  background-color: ;
 }
 
 .price-range {
@@ -931,7 +938,7 @@ body {
   margin: 0 70px;
 }
 
-/* .result-list::before {
+.result-list::before {
   position: absolute;
   bottom: -40px;
   left: 0;
@@ -939,7 +946,7 @@ body {
   width: 1060px;
   height: 1px;
   background-color: #E6E6E6;
-} */
+}
 
 .hotel-list {
   display: grid;
