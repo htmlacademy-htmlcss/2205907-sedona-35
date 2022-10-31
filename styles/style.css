@@ -725,16 +725,13 @@ body {
 }
 
 .catalog-filter-item {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
 }
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
-}
-
-.control {
-  display: flex;
-  align-items: center;
 }
 
 .control-input {
@@ -762,7 +759,7 @@ body {
 
 .price-input {
   z-index: 1;
-  width: 143px;
+  width: 123px;
   height: 48px;
   border: none;
   font-size: 18px;
@@ -903,13 +900,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
-  padding: 12px 84px 12px 20px;
+  padding: 12px 111px 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 70px;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
-  left: ;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 
