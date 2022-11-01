@@ -727,7 +727,7 @@ body {
 .catalog-filter-item {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-item:last-child {
@@ -735,12 +735,81 @@ body {
 }
 
 .control-input {
+  z-index: -1;
+  position: absolute;
   width: 20px;
   height: 20px;
   margin: 0;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   border-radius: 4px;
-  background-color: transparent;
+  opacity: 0;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-input + .control {
+  position: relative;
+  padding: 0 0 0 40px;
+  cursor: pointer;
+}
+
+.control-input + .control::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.control-input:checked + .control::before {
+  background-image: url(../images/icons/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control-radio + .control-radio-label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.control-radio + .control-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.control-radio:checked + .control-radio-label::after {
+  opacity: 1;
+}
+
+.control-radio + .control-radio-label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3f5e72;
+  opacity: 0;
 }
 
 .catalog-filter-group-price {
@@ -766,6 +835,14 @@ body {
   font-weight: 700;
   line-height: 24px;
   padding: 0 0 0 20px;
+}
+
+.price-input:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.price-input:active {
+  outline: 2px solid black;
 }
 
 .price-input::placeholder {
