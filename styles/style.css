@@ -41,7 +41,6 @@ body {
 }
 
 .navigation-logo {
-  z-index: 1;
   position: absolute;
 }
 
@@ -116,7 +115,6 @@ body {
   background-color: #7DB54F;
   border-radius: 50%;
   position: absolute;
-  z-index: 1;
   top: 10px;
   left: 22px;
   /* margin: -8px 0 0 9px; */
@@ -1325,6 +1323,219 @@ body {
   color: rgba(255, 255, 255, 0.3);
   border: none;
   padding: 8px 0;
+}
+
+/* MODAL WINDOW */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+/* .modal-container {
+  display: none;
+} */
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 717px;
+}
+
+.modal-hotel-search {
+  width: 576px;
+}
+
+.modal-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.search-form-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: grid;
+  grid-template-columns: 247px 242px;
+  column-gap: 88px;
+  row-gap: 48px;
+}
+
+.search-form-item--first-row {
+  grid-column: 1/3;
+}
+
+.search-form-item--second-row {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.search-form-item--first-half-row {
+  grid-column: 1/2;
+}
+
+.search-form-item--second-half-row {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+.search-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.date-input-label--check-in {
+  margin-right: 20px;
+}
+
+.date-input-label--check-out {
+  margin-right: 18px;
+}
+
+.search-form--prefered-date {
+  box-sizing: border-box;
+  width: 440px;
+  height: 48px;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'PT Sans';
+}
+
+.search-form--prefered-date,
+.search-form--number-of-people {
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+
+.search-form--prefered-date::placeholder {
+  background-image: url(../images/icons/);
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 100%;
+  border: none;
+  background-image: url(../images/icons/close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.number-of-people--lable {
+  padding-right: 4px;
+}
+
+.search-form--number-of-people {
+  width: 110px;
+  height: 48px;
+}
+
+
+.tooltip {
+  position: absolute;
+  left: 55px;
+  top: 8px;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 256px;
+  position: absolute;
+  left: -115px;
+  margin-top: 7px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url(../images/icons/tooltip-arrow.svg);
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  /* transform: rotate(180deg); */
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form-button {
+  background-color: #82B3D3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 256px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.search-form-item:last-child {
+  margin: 0;
 }
 
 /*FOOTER*/
