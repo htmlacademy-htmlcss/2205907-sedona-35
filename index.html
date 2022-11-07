@@ -265,15 +265,32 @@
               <label class="date-input-label--check-in" for="check-in">Дата Заезда:</label>
               <input class="search-form--prefered-date" type="text" id="check-in"
                 placeholder="Введите желаемую дату прибытия">
+              <p class="past-date-error-text">Мы не можем отправить вас в прошлое.</p>
             </li>
             <li class="search-form-item search-form-item--second-row">
               <label class="date-input-label--check-out" for="check-out">Дата Выезда:</label>
               <input class="search-form--prefered-date" type="text" id="check-out"
                 placeholder="Введите желаемую дату выезда">
+              <p class="future-date-result-text">На эти даты есть свободные номера. Пока есть.</p>
             </li>
             <li class="search-form-item search-form-item--first-half-row">
               <label class="number-of-people--lable" for="adults">Взрослые:</label>
-              <input class="search-form--number-of-people" type="number" id="adults">
+              <!-- <input class="search-form--number-of-people" type="number" id="adults"> -->
+              <div class="kids-number-input">
+                <div class="number-reduce-button">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.39282 9V11H17.3928V9H3.39282Z" fill="rgba(117, 97, 87, 0.3)" />
+                  </svg>
+                </div>
+                <div class="choseen-number-result">
+                  2
+                </div>
+                <div class="number-increase-button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="rgba(117, 97, 87, 0.3)" />
+                  </svg>
+                </div>
+              </div>
             </li>
             <li class="search-form-item search-form-item--second-half-row">
               <span class="number-of-people--lable">
@@ -293,7 +310,22 @@
                   </span>
                 </span>
               </span>
-              <input class="search-form--number-of-people" type="number" id="kids">
+              <!-- <input class="search-form--number-of-people" type="number" id="kids"> -->
+              <div class="kids-number-input">
+                <div class="number-reduce-button">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.39282 9V11H17.3928V9H3.39282Z" fill="rgba(117, 97, 87, 0.3)" />
+                  </svg>
+                </div>
+                <div class="choseen-number-result">
+                  2
+                </div>
+                <div class="number-increase-button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="rgba(117, 97, 87, 0.3)" />
+                  </svg>
+                </div>
+              </div>
             </li>
             <li class="search-form-item">
               <button class="search-form-button">
