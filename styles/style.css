@@ -732,16 +732,16 @@ body {
   margin-bottom: 0;
 }
 
-.control-input {
+/* .control-input {
   z-index: -1;
   position: absolute;
   width: 20px;
   height: 20px;
   margin: 0;
-  /* margin-right: 16px; */
+  margin-right: 16px;
   border-radius: 4px;
   opacity: 0;
-}
+} */
 
 .control {
   font-size: 18px;
@@ -771,11 +771,11 @@ body {
   background-position: center;
 }
 
-.control-radio {
+/* .control-radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
-}
+} */
 
 .control-radio + .control-radio-label {
   position: relative;
@@ -847,7 +847,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px 12px 103px;
+  padding: 12px 20px 12px 83px;
 }
 
 .price-input-from {
@@ -867,6 +867,16 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .range-scale {
