@@ -1435,7 +1435,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 48px;
+  /* padding-bottom: 48px; */
 }
 
 
@@ -1495,25 +1495,25 @@ body {
 }
 
 .past-date-error-text {
-  position: absolute;
+  /* position: absolute; */
   top: 210px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
   grid-column: 1/3;
-  padding: 4px 0 23px 157px;
+  padding: 4px 89px 23px 157px;
   margin: 0;
 }
 
 .future-date-result-text {
-  position: absolute;
+  /* position: absolute; */
   top: 305px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   grid-column: 1/3;
-  padding: 4px 0 23px 157px;
+  padding: 4px 89px 23px 157px;
   margin: 0;
 }
 
@@ -1552,6 +1552,8 @@ body {
 
 .number-of-people--lable {
   padding-right: 4px;
+  display: flex;
+  align-items: center;
 }
 
 .search-form--number-of-people {
@@ -1635,7 +1637,7 @@ body {
 }
 
 .tooltip {
-  position: absolute;
+  /* position: absolute; */
   left: 55px;
   top: 8px;
   margin-top: 4px;
@@ -1658,6 +1660,10 @@ body {
   cursor: pointer;
 }
 
+.tooltip-toggle:focus {
+  outline: none;
+}
+
 .tooltip-text {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -1671,8 +1677,8 @@ body {
   box-sizing: border-box;
   width: 256px;
   position: absolute;
-  left: -115px;
-  margin-top: 7px;
+  right: 48px;
+  margin-top: 8px;
   display: none;
 }
 
