@@ -1404,6 +1404,7 @@ body {
   display: grid;
   grid-template-columns: 247px 242px;
   column-gap: 88px;
+  row-gap: 23px;
 }
 
 .search-form-item--first-row {
@@ -1417,7 +1418,7 @@ body {
 
 .search-form-item--first-half-row {
   grid-column: 1/2;
-  padding-bottom: 48px;
+  padding-bottom: 25px;
 }
 
 .search-form-item--second-half-row {
@@ -1425,17 +1426,17 @@ body {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 25px;
 }
 
 
 .search-form-item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  /* padding-bottom: 48px; */
 }
 
 
@@ -1476,16 +1477,16 @@ body {
 .date-button--check-in {
   color: grey;
   position: absolute;
-  top: 180px;
-  right: 90px;
+  top: 16px;
+  right: 22px;
   cursor: pointer;
 }
 
 .date-button--check-out {
   color: grey;
   position: absolute;
-  top: 275px;
-  right: 90px;
+  top: 16px;
+  right: 22px;
   cursor: pointer;
 }
 
@@ -1502,7 +1503,7 @@ body {
   line-height: 21px;
   color: #FF5757;
   grid-column: 1/3;
-  padding: 4px 89px 23px 157px;
+  padding: 4px 89px 0 157px;
   margin: 0;
 }
 
@@ -1513,7 +1514,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   grid-column: 1/3;
-  padding: 4px 89px 23px 157px;
+  padding: 4px 89px 0 157px;
   margin: 0;
 }
 
