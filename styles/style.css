@@ -1478,6 +1478,7 @@ body {
   position: absolute;
   top: 180px;
   right: 90px;
+  cursor: pointer;
 }
 
 .date-button--check-out {
@@ -1485,6 +1486,7 @@ body {
   position: absolute;
   top: 275px;
   right: 90px;
+  cursor: pointer;
 }
 
 .search-date {
