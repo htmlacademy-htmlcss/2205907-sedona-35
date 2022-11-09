@@ -1551,7 +1551,9 @@ body {
 }
 
 
-.number-of-people--lable {
+.number-of-people--label {
+  padding: 0;
+  margin: 0;
   padding-right: 4px;
   display: flex;
   align-items: center;
@@ -1681,6 +1683,7 @@ body {
   right: 48px;
   margin-top: 8px;
   display: none;
+  z-index: 1;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
