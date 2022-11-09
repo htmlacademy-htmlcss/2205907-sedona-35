@@ -256,9 +256,7 @@
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="search-form-list">
             <li class="search-form-item search-form-item--first-row">
@@ -328,14 +326,15 @@
             <li class="search-form-item search-form-item--first-half-row">
               <label class="number-of-people--lable" for="adults">Взрослые:</label>
               <!-- <input class="search-form--number-of-people" type="number" id="adults"> -->
-              <div class="kids-number-input">
+              <div class="number-input">
+                <span class="visually-hidden">Поле ввода количества взрослых гостей</span>
                 <button class="number-reduce-button">
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
                   </svg>
                 </button>
-                <input class="choseen-number-result kids-input" type="number" value="2" min="1" max="9">
+                <input class="choseen-number-result kids-input" type="number" id="adults" value="2" min="1" max="9">
                 <button class="number-increase-button">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -363,14 +362,15 @@
                 </span>
               </span>
               <!-- <input class="search-form--number-of-people" type="number" id="kids"> -->
-              <div class="kids-number-input">
+              <div class="number-input">
+                <span class="visually-hidden">Поле ввода количества детей</span>
                 <button class="number-reduce-button">
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
                   </svg>
                 </button>
-                <input class="choseen-number-result kids-input" type="number" value="2" min="0" max="9">
+                <input class="choseen-number-result kids-input" type="number" id="kids" value="2" min="0" max="9">
                 <button class="number-increase-button">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
