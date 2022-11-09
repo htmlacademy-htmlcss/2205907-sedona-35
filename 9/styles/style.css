@@ -612,6 +612,18 @@ body {
   padding: 0 0 0 20px;
 }
 
+.email-input:hover {
+  background-color: #E6E6E6;
+}
+
+.email-input:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.email-input:active {
+  outline: 2px solid black;
+}
+
 .email-input::placeholder {
   padding: 14px 345px 14px 0;
 }
@@ -1004,13 +1016,13 @@ body {
   width: 16px;
   height: 14px;
   padding: 15px 14px;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
 }
 
 .button--three--current {
-  border: 2px solid black;
+  outline: 2px solid black;
 }
 
 .button--slideshow {
@@ -1021,7 +1033,7 @@ body {
   width: 16px;
   height: 14px;
   padding: 15px 14px;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
 }
@@ -1034,7 +1046,7 @@ body {
   width: 16px;
   height: 14px;
   padding: 15px 14px;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
@@ -1250,6 +1262,8 @@ body {
 .button-browm:hover,
 .button-browm:focus {
   background-color: #615048;
+  border: none;
+  outline: none;
 }
 
 
@@ -1268,12 +1282,17 @@ body {
 .pagination-link:hover,
 .button-blue:hover,
 .pagination-link:focus,
-.button-blue:focus {
+.button-blue:focus,
+.search-form-button:hover,
+.search-form-button:focus-visible {
   background-color: #68A2CA;
+  border: none;
+  outline: none;
 }
 
 .pagination-link:active,
-.button-blue:active {
+.button-blue:active,
+.search-form-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1312,20 +1331,23 @@ body {
 
 .button-view:hover,
 .button-view:active {
-  border: 2px solid black;
+  outline: 2px solid black;
+  border: none;
 }
 
 
-.button-view:focus {
-  border: 2px solid #68A2CA;
+.button-view:focus-visible {
+  outline: 2px solid #68A2CA;
+  border: none;
 }
 
 .form-button-transparent:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.form-button-transparent:focus-visible {
-  border: 3px solid #83B3D3;
+.form-button-transparent:focus {
+  outline: 3px solid #83B3D3;
+  border: none;
   border-radius: 4px;
 }
 
@@ -1382,6 +1404,7 @@ body {
   display: grid;
   grid-template-columns: 247px 242px;
   column-gap: 88px;
+  row-gap: 23px;
 }
 
 .search-form-item--first-row {
@@ -1395,7 +1418,7 @@ body {
 
 .search-form-item--first-half-row {
   grid-column: 1/2;
-  padding-bottom: 48px;
+  padding-bottom: 25px;
 }
 
 .search-form-item--second-half-row {
@@ -1403,17 +1426,17 @@ body {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 25px;
 }
 
 
 .search-form-item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 48px;
 }
 
 
@@ -1434,12 +1457,38 @@ body {
   line-height: 24px;
   font-weight: 700;
   font-family: 'PT Sans';
-  background-image: url(../images/icons/date.svg);
+  /* background-image: url(../images/icons/date.svg);
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 95% 50%; */
 }
 
+.search-form--prefered-date:hover {
+  background-color: #E6E6E6;
+}
 
+.search-form--prefered-date:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.search-form--prefered-date:active {
+  outline: 2px solid black;
+}
+
+.date-button--check-in {
+  color: grey;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  cursor: pointer;
+}
+
+.date-button--check-out {
+  color: grey;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  cursor: pointer;
+}
 
 .search-date {
   display: flex;
@@ -1447,25 +1496,25 @@ body {
 }
 
 .past-date-error-text {
-  position: absolute;
+  /* position: absolute; */
   top: 210px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
   grid-column: 1/3;
-  padding: 4px 0 23px 157px;
+  padding: 4px 89px 0 157px;
   margin: 0;
 }
 
 .future-date-result-text {
-  position: absolute;
+  /* position: absolute; */
   top: 305px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   grid-column: 1/3;
-  padding: 4px 0 23px 157px;
+  padding: 4px 89px 0 157px;
   margin: 0;
 }
 
@@ -1492,8 +1541,20 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+
 .number-of-people--lable {
   padding-right: 4px;
+  display: flex;
+  align-items: center;
 }
 
 .search-form--number-of-people {
@@ -1544,8 +1605,27 @@ body {
   justify-content: center;
   cursor: pointer;
   border: none;
+  color: rgba(117, 97, 87, 0.3);
 }
 
+.number-increase-button:hover,
+.number-reduce-button:hover {
+  color: black;
+}
+
+.number-increase-button:focus,
+.number-reduce-button:focus {
+  color: black;
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.number-increase-button:active,
+.number-reduce-button:active {
+  color: rgba(117, 97, 87, 0.3);
+  border: none;
+  outline: none;
+}
 
 .number-reduce-button {
   border-top-left-radius: 4px;
@@ -1558,7 +1638,7 @@ body {
 }
 
 .tooltip {
-  position: absolute;
+  /* position: absolute; */
   left: 55px;
   top: 8px;
   margin-top: 4px;
@@ -1581,6 +1661,10 @@ body {
   cursor: pointer;
 }
 
+.tooltip-toggle:focus {
+  outline: none;
+}
+
 .tooltip-text {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -1594,8 +1678,8 @@ body {
   box-sizing: border-box;
   width: 256px;
   position: absolute;
-  left: -115px;
-  margin-top: 7px;
+  right: 48px;
+  margin-top: 8px;
   display: none;
 }
 
@@ -1629,6 +1713,7 @@ body {
   border: none;
   border-radius: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .search-form-item:last-child {
@@ -1669,6 +1754,7 @@ body {
 .social-link:hover,
 .social-link:focus {
   color: #68A2CA;
+  outline: none;
 }
 
 .social-link:active {
@@ -1687,6 +1773,7 @@ body {
 .contacts-phone-number:hover,
 .contacts-phone-number:focus {
   color: #756157;
+  outline: none;
 }
 
 .contacts-phone-number:active {
@@ -1701,6 +1788,7 @@ body {
 .footer-academy-link:hover,
 .footer-academy-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-academy-link:active {
