@@ -263,7 +263,7 @@
             <li class="search-form-item search-form-item--first-row">
               <label class="date-input-label--check-in" for="check-in">Дата Заезда:</label>
               <input class="search-form--prefered-date" type="text" id="check-in" placeholder="Укажите дату">
-              <span class="date-button--check-in">
+              <button class="date-button--check-in">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.14282 12C8.44282 12 8.64282 11.8 8.64282 11.5C8.64282 11.2 8.44282 11 8.14282 11C7.84282 11 7.64282 11.2 7.64282 11.5C7.64282 11.8 7.84282 12 8.14282 12Z" />
@@ -289,13 +289,13 @@
                   <path
                     d="M14.8928 13C14.5928 13 14.3928 13.2 14.3928 13.5C14.3928 13.8 14.5928 14 14.8928 14C15.1928 14 15.3928 13.8 15.3928 13.5C15.3928 13.2 15.1928 13 14.8928 13Z" />
                 </svg>
-              </span>
+              </button>
               <p class="past-date-error-text">Мы не можем отправить вас в прошлое.</p>
             </li>
             <li class="search-form-item search-form-item--second-row">
               <label class="date-input-label--check-out" for="check-out">Дата Выезда:</label>
               <input class="search-form--prefered-date" type="text" id="check-out" placeholder="Укажите дату">
-              <span class="date-button--check-out">
+              <button class="date-button--check-out">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.14282 12C8.44282 12 8.64282 11.8 8.64282 11.5C8.64282 11.2 8.44282 11 8.14282 11C7.84282 11 7.64282 11.2 7.64282 11.5C7.64282 11.8 7.84282 12 8.14282 12Z" />
@@ -321,15 +321,15 @@
                   <path
                     d="M14.8928 13C14.5928 13 14.3928 13.2 14.3928 13.5C14.3928 13.8 14.5928 14 14.8928 14C15.1928 14 15.3928 13.8 15.3928 13.5C15.3928 13.2 15.1928 13 14.8928 13Z" />
                 </svg>
-              </span>
+              </button>
               <p class="future-date-result-text">На эти даты есть свободные номера. Пока есть.</p>
             </li>
             <li class="search-form-item search-form-item--first-half-row">
               <label class="number-of-people--lable" for="adults">Взрослые:</label>
               <!-- <input class="search-form--number-of-people" type="number" id="adults"> -->
               <div class="number-input">
-                <span class="visually-hidden">Поле ввода количества взрослых гостей</span>
                 <button class="number-reduce-button">
+                  <span class="visually-hidden">Кнопка умеьшения количества персон</span>
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
@@ -337,6 +337,7 @@
                 </button>
                 <input class="choseen-number-result kids-input" type="number" id="adults" value="2" min="1" max="9">
                 <button class="number-increase-button">
+                  <span class="visually-hidden">Кнопка увеличения количества персон</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -364,8 +365,8 @@
                 </>
                 <!-- <input class="search-form--number-of-people" type="number" id="kids"> -->
               <div class="number-input">
-                <span class="visually-hidden">Поле ввода количества детей</span>
                 <button class="number-reduce-button">
+                  <span class="visually-hidden">Кнопка умеьшения количества персон</span>
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
@@ -373,6 +374,7 @@
                 </button>
                 <input class="choseen-number-result kids-input" type="number" id="kids" value="2" min="0" max="9">
                 <button class="number-increase-button">
+                  <span class="visually-hidden">Кнопка увеличения количества персон</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />

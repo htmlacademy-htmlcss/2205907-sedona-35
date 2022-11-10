@@ -1477,17 +1477,19 @@ body {
 .date-button--check-in {
   color: grey;
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 22px;
-  cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .date-button--check-out {
   color: grey;
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 22px;
-  cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .search-date {
@@ -1644,7 +1646,7 @@ body {
   left: 55px;
   top: 8px;
   margin-top: 4px;
-  margin-left: 2px;
+  margin-left: 6px;
   width: 26px;
   height: 26px;
 }
