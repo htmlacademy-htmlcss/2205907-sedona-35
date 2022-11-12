@@ -118,19 +118,21 @@
           </li>
         </ul>
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form class="catalog-filter" action="#" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="pool" checked>Бассейн</label>
+                <input class="control-input visually-hidden" type="checkbox" id="pool" name="pool" checked>
+                <label class="control" for="pool">Бассейн</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="parking"
-                    checked>Парковка</label>
+                <input class="control-input visually-hidden" type="checkbox" id="parking" name="parking">
+                <label class="control" for="parking">Парковка</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="wi-fi">Wi-Fi</label>
+                <input class="control-input visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
+                <label class="control" for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -138,13 +140,16 @@
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="radio" name="hotel" checked>Гостиница</label>
+                <input class="control-radio visually-hidden" type="checkbox" id="hotel" name="hotel">
+                <label class="control control-radio-label" for="hotel">Гостиница</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="radio" name="motel">Мотель</label>
+                <input class="control-radio visually-hidden" type="checkbox" id="motel" name="motel">
+                <label class="control control-radio-label" for="motel">Мотель</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="radio" name="apartment">Апартаменты</label>
+                <input class="control-radio visually-hidden" type="checkbox" id="apartment" name="apartment">
+                <label class="control control-radio-label" for="apartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -152,9 +157,9 @@
             <legend class="catalog-filter-title">Стоимость, <span>₽</span></legend>
             <div class="price-input-wrapper">
               <label class="value-from-till"><input class="price-input price-input-from" type="number" value="0"
-                  placeholder="от"></label>
+                  placeholder="от" min="1" max="10000"></label>
               <label class="value-from-till"><input class="price-input price-input-till" type="number" value="9000"
-                  placeholder="до"></label>
+                  placeholder="до" min="1" max="10000"></label>
             </div>
             <div class="range">
               <div class="range-scale">
@@ -278,7 +283,7 @@
     <section class="subscribe-block subscribe-no-bg">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-form" action="#" method="post">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="email-input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
         <button class="subscribe-button button-blue" type="submit" value="Подписаться">Подписаться</button>
       </form>

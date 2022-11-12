@@ -200,7 +200,7 @@
     <section class="subscribe-block subscribe-bg">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-form" action="#" method="post">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="email-input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
         <button class="subscribe-button button-blue" type="submit" value="Подписаться">Подписаться</button>
       </form>
@@ -250,6 +250,147 @@
         </ul>
       </section>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-hotel-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="search-form-list">
+            <li class="search-form-item search-form-item--first-row">
+              <label class="date-input-label--check-in" for="check-in">Дата Заезда:</label>
+              <input class="search-form--prefered-date" type="text" id="check-in" placeholder="Укажите дату">
+              <button class="date-button--check-in">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.14282 12C8.44282 12 8.64282 11.8 8.64282 11.5C8.64282 11.2 8.44282 11 8.14282 11C7.84282 11 7.64282 11.2 7.64282 11.5C7.64282 11.8 7.84282 12 8.14282 12Z" />
+                  <path
+                    d="M17.3928 4H15.3928V2H14.3928V4H6.39282V2H5.39282V4H3.39282C2.79282 4 2.39282 4.4 2.39282 5V16C2.39282 16.5 2.79282 17 3.39282 17H17.3928C17.8928 17 18.3928 16.5 18.3928 16V5C18.3928 4.4 17.8928 4 17.3928 4ZM17.3928 16H3.39282V9H17.3928V16ZM3.39282 8V5H5.39282V7H6.39282V5H14.3928V7H15.3928V5H17.3928V8H3.39282Z" />
+                  <path
+                    d="M10.3928 12C10.6928 12 10.8928 11.8 10.8928 11.5C10.8928 11.2 10.6928 11 10.3928 11C10.0928 11 9.89282 11.2 9.89282 11.5C9.89282 11.8 10.0928 12 10.3928 12Z" />
+                  <path
+                    d="M12.6428 12C12.9428 12 13.1428 11.8 13.1428 11.5C13.1428 11.2 12.9428 11 12.6428 11C12.3428 11 12.1428 11.2 12.1428 11.5C12.1428 11.8 12.3428 12 12.6428 12Z" />
+                  <path
+                    d="M8.14282 13C7.84282 13 7.64282 13.2 7.64282 13.5C7.64282 13.8 7.84282 14 8.14282 14C8.44282 14 8.64282 13.8 8.64282 13.5C8.64282 13.2 8.44282 13 8.14282 13Z" />
+                  <path
+                    d="M5.89282 12C6.19282 12 6.39282 11.8 6.39282 11.5C6.39282 11.2 6.19282 11 5.89282 11C5.59282 11 5.39282 11.2 5.39282 11.5C5.39282 11.8 5.59282 12 5.89282 12Z" />
+                  <path
+                    d="M5.89282 13C5.59282 13 5.39282 13.2 5.39282 13.5C5.39282 13.8 5.59282 14 5.89282 14C6.19282 14 6.39282 13.8 6.39282 13.5C6.39282 13.2 6.19282 13 5.89282 13Z" />
+                  <path
+                    d="M10.3928 13C10.0928 13 9.89282 13.2 9.89282 13.5C9.89282 13.8 10.0928 14 10.3928 14C10.6928 14 10.8928 13.8 10.8928 13.5C10.8928 13.2 10.6928 13 10.3928 13Z" />
+                  <path
+                    d="M12.6428 13C12.3428 13 12.1428 13.2 12.1428 13.5C12.1428 13.8 12.3428 14 12.6428 14C12.9428 14 13.1428 13.8 13.1428 13.5C13.1428 13.2 12.9428 13 12.6428 13Z"
+                    fill="black" />
+                  <path
+                    d="M14.8928 12C15.1928 12 15.3928 11.8 15.3928 11.5C15.3928 11.2 15.1928 11 14.8928 11C14.5928 11 14.3928 11.2 14.3928 11.5C14.3928 11.8 14.5928 12 14.8928 12Z" />
+                  <path
+                    d="M14.8928 13C14.5928 13 14.3928 13.2 14.3928 13.5C14.3928 13.8 14.5928 14 14.8928 14C15.1928 14 15.3928 13.8 15.3928 13.5C15.3928 13.2 15.1928 13 14.8928 13Z" />
+                </svg>
+              </button>
+              <p class="past-date-error-text">Мы не можем отправить вас в прошлое.</p>
+            </li>
+            <li class="search-form-item search-form-item--second-row">
+              <label class="date-input-label--check-out" for="check-out">Дата Выезда:</label>
+              <input class="search-form--prefered-date" type="text" id="check-out" placeholder="Укажите дату">
+              <button class="date-button--check-out">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.14282 12C8.44282 12 8.64282 11.8 8.64282 11.5C8.64282 11.2 8.44282 11 8.14282 11C7.84282 11 7.64282 11.2 7.64282 11.5C7.64282 11.8 7.84282 12 8.14282 12Z" />
+                  <path
+                    d="M17.3928 4H15.3928V2H14.3928V4H6.39282V2H5.39282V4H3.39282C2.79282 4 2.39282 4.4 2.39282 5V16C2.39282 16.5 2.79282 17 3.39282 17H17.3928C17.8928 17 18.3928 16.5 18.3928 16V5C18.3928 4.4 17.8928 4 17.3928 4ZM17.3928 16H3.39282V9H17.3928V16ZM3.39282 8V5H5.39282V7H6.39282V5H14.3928V7H15.3928V5H17.3928V8H3.39282Z" />
+                  <path
+                    d="M10.3928 12C10.6928 12 10.8928 11.8 10.8928 11.5C10.8928 11.2 10.6928 11 10.3928 11C10.0928 11 9.89282 11.2 9.89282 11.5C9.89282 11.8 10.0928 12 10.3928 12Z" />
+                  <path
+                    d="M12.6428 12C12.9428 12 13.1428 11.8 13.1428 11.5C13.1428 11.2 12.9428 11 12.6428 11C12.3428 11 12.1428 11.2 12.1428 11.5C12.1428 11.8 12.3428 12 12.6428 12Z" />
+                  <path
+                    d="M8.14282 13C7.84282 13 7.64282 13.2 7.64282 13.5C7.64282 13.8 7.84282 14 8.14282 14C8.44282 14 8.64282 13.8 8.64282 13.5C8.64282 13.2 8.44282 13 8.14282 13Z" />
+                  <path
+                    d="M5.89282 12C6.19282 12 6.39282 11.8 6.39282 11.5C6.39282 11.2 6.19282 11 5.89282 11C5.59282 11 5.39282 11.2 5.39282 11.5C5.39282 11.8 5.59282 12 5.89282 12Z" />
+                  <path
+                    d="M5.89282 13C5.59282 13 5.39282 13.2 5.39282 13.5C5.39282 13.8 5.59282 14 5.89282 14C6.19282 14 6.39282 13.8 6.39282 13.5C6.39282 13.2 6.19282 13 5.89282 13Z" />
+                  <path
+                    d="M10.3928 13C10.0928 13 9.89282 13.2 9.89282 13.5C9.89282 13.8 10.0928 14 10.3928 14C10.6928 14 10.8928 13.8 10.8928 13.5C10.8928 13.2 10.6928 13 10.3928 13Z" />
+                  <path
+                    d="M12.6428 13C12.3428 13 12.1428 13.2 12.1428 13.5C12.1428 13.8 12.3428 14 12.6428 14C12.9428 14 13.1428 13.8 13.1428 13.5C13.1428 13.2 12.9428 13 12.6428 13Z"
+                    fill="black" />
+                  <path
+                    d="M14.8928 12C15.1928 12 15.3928 11.8 15.3928 11.5C15.3928 11.2 15.1928 11 14.8928 11C14.5928 11 14.3928 11.2 14.3928 11.5C14.3928 11.8 14.5928 12 14.8928 12Z" />
+                  <path
+                    d="M14.8928 13C14.5928 13 14.3928 13.2 14.3928 13.5C14.3928 13.8 14.5928 14 14.8928 14C15.1928 14 15.3928 13.8 15.3928 13.5C15.3928 13.2 15.1928 13 14.8928 13Z" />
+                </svg>
+              </button>
+              <p class="future-date-result-text">На эти даты есть свободные номера. Пока есть.</p>
+            </li>
+            <li class="search-form-item search-form-item--first-half-row">
+              <label class="number-of-people--lable" for="adults">Взрослые:</label>
+              <!-- <input class="search-form--number-of-people" type="number" id="adults"> -->
+              <div class="number-input">
+                <button class="number-reduce-button">
+                  <span class="visually-hidden">Кнопка умеьшения количества персон</span>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
+                  </svg>
+                </button>
+                <input class="choseen-number-result kids-input" type="number" id="adults" value="2" min="1" max="9">
+                <button class="number-increase-button">
+                  <span class="visually-hidden">Кнопка увеличения количества персон</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="search-form-item search-form-item--second-half-row">
+              <p class="number-of-people--label">
+                <label class="number-of-people--lable" for="kids">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+                </>
+                <!-- <input class="search-form--number-of-people" type="number" id="kids"> -->
+              <div class="number-input">
+                <button class="number-reduce-button">
+                  <span class="visually-hidden">Кнопка умеьшения количества персон</span>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.39282 9V11H17.3928V9H3.39282Z" />
+                  </svg>
+                </button>
+                <input class="choseen-number-result kids-input" type="number" id="kids" value="2" min="0" max="9">
+                <button class="number-increase-button">
+                  <span class="visually-hidden">Кнопка увеличения количества персон</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="search-form-item">
+              <button class="search-form-button" type="submit">
+                Найти
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
   </body>
 
 </html>
