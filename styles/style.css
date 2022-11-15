@@ -704,6 +704,10 @@ body {
   line-height: 21px;
 }
 
+.breadcrumbs-link:focus {
+  outline: none;
+}
+
 .catalog-filter {
   display: flex;
   max-height: 160px;
@@ -742,6 +746,14 @@ body {
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
+}
+
+.control:hover {
+  color: rgb(211, 211, 211, 0.8);
+}
+
+.control:active {
+  color: rgb(211, 211, 211, 1);
 }
 
 /* .control-input {
@@ -1132,13 +1144,17 @@ body {
 }
 
 .button-more-info {
-  display: block;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
   color: white;
-  padding: 8px 26px 8px 26px;
+  padding: 8px 0 8px 26px;
   border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
 }
 
 .button-make-favorite {
@@ -1148,7 +1164,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 8px 20px 8px 20px;
+  padding: 8px 0 8px 0;
   border: none;
   border-radius: 4px;
   color: white;
@@ -1259,21 +1275,21 @@ body {
 
 /* Buttons and links with pseudoclasses */
 
-.button-browm:hover,
-.button-browm:focus {
+.button-brown:hover,
+.button-brown:focus {
   background-color: #615048;
   border: none;
   outline: none;
 }
 
 
-.button-browm:active {
+.button-brown:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
 
-.button-browm:disabled {
+.button-brown:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
 }
