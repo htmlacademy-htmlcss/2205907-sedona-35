@@ -794,7 +794,18 @@ body {
   background: #ffffff;
 }
 
-.control-input + .control::before {
+.control-input:hover + .control::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #ffffff69;
+}
+
+.control-input:focus + .control::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -803,6 +814,7 @@ body {
   height: 20px;
   border-radius: 4px;
   background: #ffffff;
+  outline: 3px solid #68A2CA;
 }
 
 .control-input:checked + .control::before {
@@ -811,14 +823,14 @@ body {
   background-position: center;
 }
 
-.control:focus::before {
+/* .control:focus::before {
   outline: 3px solid #68A2CA;
   border-radius: 4px;
 }
 
 .control-radio:focus::before {
   outline: 3px solid #68A2CA;
-}
+} */
 
 /* .control-radio {
   position: absolute;
@@ -841,6 +853,29 @@ body {
   height: 20px;
   border-radius: 50%;
   background: #ffffff;
+}
+
+.control-radio:hover + .control-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff69;
+}
+
+.control-radio:focus + .control-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  outline: 3px solid #68A2CA;
 }
 
 .control-radio:checked + .control-radio-label::after {
