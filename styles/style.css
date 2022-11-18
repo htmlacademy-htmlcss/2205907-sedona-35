@@ -1162,11 +1162,11 @@ body {
 }
 
 .stars-rate-three {
-  width: 52px;
+  width: 48px;
 }
 
 .stars-rate-two {
-  width: 30px;
+  width: 25px;
 }
 
 .hotel-rate {
@@ -1794,6 +1794,8 @@ body {
   text-decoration: none;
   display: flex;
   align-items: baseline;
+  /* margin-bottom: 4px; */
+  margin-left: 2px;
 }
 
 .academy-link-item {}
