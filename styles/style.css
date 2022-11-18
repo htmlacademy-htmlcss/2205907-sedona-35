@@ -610,8 +610,9 @@ body {
 .catalog-hotels {
   background-image: url(../images/catalog-bg.jpg);
   background-color: #808080;
+  background-size: auto 412px;
   /* background-repeat: no-repeat; */
-  padding: 35px 70px 0 70px;
+  padding: 35px 70px 3px 70px;
 }
 
 .catalog-filter-list {
@@ -957,6 +958,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding-right: 200px;
+  width: 338px;
   /* padding: 6px; */
   /* display: flex;
   justify-content: space-between; */
@@ -965,7 +967,7 @@ body {
 .select-control {
   box-sizing: border-box;
   width: 292px;
-  height: 49px;
+  height: 48px;
   font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -975,10 +977,10 @@ body {
   padding: 12px 111px 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 70px;
+  margin-right: 73px;
   background-image: url(../images/icons/arrow.svg);
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 12px center;
   appearance: none;
 }
 
@@ -990,8 +992,8 @@ body {
 
 .button--three-in-a-row {
   box-sizing: border-box;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   display: block;
   background-image: url(../images/icons/view-row.svg);
   background-repeat: no-repeat;
@@ -999,7 +1001,7 @@ body {
   padding: 15px 14px;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .button--three--current {
@@ -1008,8 +1010,8 @@ body {
 
 .button--slideshow {
   box-sizing: border-box;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   display: block;
   background-image: url(../images/icons/view-slide.svg);
   background-repeat: no-repeat;
@@ -1017,13 +1019,13 @@ body {
   padding: 15px 14px;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .button--listshow {
   box-sizing: border-box;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   display: block;
   background-image: url(../images/icons/view-list.svg);
   background-repeat: no-repeat;
