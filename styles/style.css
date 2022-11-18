@@ -1794,6 +1794,8 @@ body {
   text-decoration: none;
   display: flex;
   align-items: baseline;
+  /* margin-bottom: 4px; */
+  margin-left: 2px;
 }
 
 .academy-link-item {}
